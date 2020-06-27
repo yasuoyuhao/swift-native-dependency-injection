@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,30 @@
 		768A437224A7153C009CCCE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 768A437124A7153C009CCCE8 /* Assets.xcassets */; };
 		768A437524A7153C009CCCE8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 768A437424A7153C009CCCE8 /* Preview Assets.xcassets */; };
 		768A437824A7153C009CCCE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768A437624A7153C009CCCE8 /* LaunchScreen.storyboard */; };
+		768A438024A719F8009CCCE8 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768A437F24A719F8009CCCE8 /* Dependencies.swift */; };
+		768A438724A71A9C009CCCE8 /* BaseAPIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768A438424A71A9C009CCCE8 /* BaseAPIServices.swift */; };
+		768A438824A71A9C009CCCE8 /* AccountsAPIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768A438524A71A9C009CCCE8 /* AccountsAPIServices.swift */; };
+		768A438924A71A9C009CCCE8 /* ProductsAPIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768A438624A71A9C009CCCE8 /* ProductsAPIServices.swift */; };
+		768A438C24A71AF3009CCCE8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 768A438B24A71AF3009CCCE8 /* Alamofire */; };
+		768A438F24A71B3C009CCCE8 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 768A438E24A71B3C009CCCE8 /* PromiseKit */; };
+		768A439424A71BCF009CCCE8 /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768A439124A71BCF009CCCE8 /* LoginResult.swift */; };
+		768A439524A71BCF009CCCE8 /* ProductRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768A439224A71BCF009CCCE8 /* ProductRes.swift */; };
+		768A439624A71BCF009CCCE8 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768A439324A71BCF009CCCE8 /* Products.swift */; };
+		768A439E24A71FC1009CCCE8 /* swift_native_dependency_injectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768A439D24A71FC1009CCCE8 /* swift_native_dependency_injectionTests.swift */; };
+		768A43A724A72069009CCCE8 /* AccountsAPIServices+Fake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768A43A524A72059009CCCE8 /* AccountsAPIServices+Fake.swift */; };
+		76C9945E24A729B7002EF4A0 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 76C9945D24A729B7002EF4A0 /* Quick */; };
+		76C9946124A729CD002EF4A0 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 76C9946024A729CD002EF4A0 /* Nimble */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		768A43A024A71FC1009CCCE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 768A436024A7153B009CCCE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 768A436724A7153B009CCCE8;
+			remoteInfo = "swift-native-dependency-injection";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		768A436824A7153B009CCCE8 /* swift-native-dependency-injection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-native-dependency-injection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +47,17 @@
 		768A437424A7153C009CCCE8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		768A437724A7153C009CCCE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		768A437924A7153C009CCCE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		768A437F24A719F8009CCCE8 /* Dependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		768A438424A71A9C009CCCE8 /* BaseAPIServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPIServices.swift; sourceTree = "<group>"; };
+		768A438524A71A9C009CCCE8 /* AccountsAPIServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsAPIServices.swift; sourceTree = "<group>"; };
+		768A438624A71A9C009CCCE8 /* ProductsAPIServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsAPIServices.swift; sourceTree = "<group>"; };
+		768A439124A71BCF009CCCE8 /* LoginResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
+		768A439224A71BCF009CCCE8 /* ProductRes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductRes.swift; sourceTree = "<group>"; };
+		768A439324A71BCF009CCCE8 /* Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		768A439B24A71FC1009CCCE8 /* swift-native-dependency-injectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-native-dependency-injectionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		768A439D24A71FC1009CCCE8 /* swift_native_dependency_injectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_native_dependency_injectionTests.swift; sourceTree = "<group>"; };
+		768A439F24A71FC1009CCCE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		768A43A524A72059009CCCE8 /* AccountsAPIServices+Fake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountsAPIServices+Fake.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +65,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				768A438C24A71AF3009CCCE8 /* Alamofire in Frameworks */,
+				768A438F24A71B3C009CCCE8 /* PromiseKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768A439824A71FC1009CCCE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76C9945E24A729B7002EF4A0 /* Quick in Frameworks */,
+				76C9946124A729CD002EF4A0 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				768A436A24A7153B009CCCE8 /* swift-native-dependency-injection */,
+				768A439C24A71FC1009CCCE8 /* swift-native-dependency-injectionTests */,
 				768A436924A7153B009CCCE8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				768A436824A7153B009CCCE8 /* swift-native-dependency-injection.app */,
+				768A439B24A71FC1009CCCE8 /* swift-native-dependency-injectionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,9 +103,12 @@
 		768A436A24A7153B009CCCE8 /* swift-native-dependency-injection */ = {
 			isa = PBXGroup;
 			children = (
+				768A438324A71A9C009CCCE8 /* APIServices */,
+				768A439024A71BCF009CCCE8 /* Model */,
 				768A436B24A7153B009CCCE8 /* AppDelegate.swift */,
 				768A436D24A7153B009CCCE8 /* SceneDelegate.swift */,
 				768A436F24A7153B009CCCE8 /* ContentView.swift */,
+				768A437F24A719F8009CCCE8 /* Dependencies.swift */,
 				768A437124A7153C009CCCE8 /* Assets.xcassets */,
 				768A437624A7153C009CCCE8 /* LaunchScreen.storyboard */,
 				768A437924A7153C009CCCE8 /* Info.plist */,
@@ -73,6 +123,44 @@
 				768A437424A7153C009CCCE8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		768A438324A71A9C009CCCE8 /* APIServices */ = {
+			isa = PBXGroup;
+			children = (
+				76C9946224A72B53002EF4A0 /* Fake */,
+				768A438424A71A9C009CCCE8 /* BaseAPIServices.swift */,
+				768A438524A71A9C009CCCE8 /* AccountsAPIServices.swift */,
+				768A438624A71A9C009CCCE8 /* ProductsAPIServices.swift */,
+			);
+			path = APIServices;
+			sourceTree = "<group>";
+		};
+		768A439024A71BCF009CCCE8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				768A439124A71BCF009CCCE8 /* LoginResult.swift */,
+				768A439224A71BCF009CCCE8 /* ProductRes.swift */,
+				768A439324A71BCF009CCCE8 /* Products.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		768A439C24A71FC1009CCCE8 /* swift-native-dependency-injectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				768A439D24A71FC1009CCCE8 /* swift_native_dependency_injectionTests.swift */,
+				768A439F24A71FC1009CCCE8 /* Info.plist */,
+			);
+			path = "swift-native-dependency-injectionTests";
+			sourceTree = "<group>";
+		};
+		76C9946224A72B53002EF4A0 /* Fake */ = {
+			isa = PBXGroup;
+			children = (
+				768A43A524A72059009CCCE8 /* AccountsAPIServices+Fake.swift */,
+			);
+			path = Fake;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,9 +179,35 @@
 			dependencies = (
 			);
 			name = "swift-native-dependency-injection";
+			packageProductDependencies = (
+				768A438B24A71AF3009CCCE8 /* Alamofire */,
+				768A438E24A71B3C009CCCE8 /* PromiseKit */,
+			);
 			productName = "swift-native-dependency-injection";
 			productReference = 768A436824A7153B009CCCE8 /* swift-native-dependency-injection.app */;
 			productType = "com.apple.product-type.application";
+		};
+		768A439A24A71FC1009CCCE8 /* swift-native-dependency-injectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 768A43A224A71FC1009CCCE8 /* Build configuration list for PBXNativeTarget "swift-native-dependency-injectionTests" */;
+			buildPhases = (
+				768A439724A71FC1009CCCE8 /* Sources */,
+				768A439824A71FC1009CCCE8 /* Frameworks */,
+				768A439924A71FC1009CCCE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				768A43A124A71FC1009CCCE8 /* PBXTargetDependency */,
+			);
+			name = "swift-native-dependency-injectionTests";
+			packageProductDependencies = (
+				76C9945D24A729B7002EF4A0 /* Quick */,
+				76C9946024A729CD002EF4A0 /* Nimble */,
+			);
+			productName = "swift-native-dependency-injectionTests";
+			productReference = 768A439B24A71FC1009CCCE8 /* swift-native-dependency-injectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -108,6 +222,10 @@
 					768A436724A7153B009CCCE8 = {
 						CreatedOnToolsVersion = 11.5;
 					};
+					768A439A24A71FC1009CCCE8 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 768A436724A7153B009CCCE8;
+					};
 				};
 			};
 			buildConfigurationList = 768A436324A7153B009CCCE8 /* Build configuration list for PBXProject "swift-native-dependency-injection" */;
@@ -119,11 +237,18 @@
 				Base,
 			);
 			mainGroup = 768A435F24A7153B009CCCE8;
+			packageReferences = (
+				768A438A24A71AF3009CCCE8 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				768A438D24A71B3C009CCCE8 /* XCRemoteSwiftPackageReference "PromiseKit" */,
+				76C9945C24A729B7002EF4A0 /* XCRemoteSwiftPackageReference "Quick" */,
+				76C9945F24A729CD002EF4A0 /* XCRemoteSwiftPackageReference "Nimble" */,
+			);
 			productRefGroup = 768A436924A7153B009CCCE8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				768A436724A7153B009CCCE8 /* swift-native-dependency-injection */,
+				768A439A24A71FC1009CCCE8 /* swift-native-dependency-injectionTests */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +264,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		768A439924A71FC1009CCCE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -146,13 +278,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				768A43A724A72069009CCCE8 /* AccountsAPIServices+Fake.swift in Sources */,
+				768A438024A719F8009CCCE8 /* Dependencies.swift in Sources */,
 				768A436C24A7153B009CCCE8 /* AppDelegate.swift in Sources */,
 				768A436E24A7153B009CCCE8 /* SceneDelegate.swift in Sources */,
 				768A437024A7153B009CCCE8 /* ContentView.swift in Sources */,
+				768A439424A71BCF009CCCE8 /* LoginResult.swift in Sources */,
+				768A438824A71A9C009CCCE8 /* AccountsAPIServices.swift in Sources */,
+				768A438924A71A9C009CCCE8 /* ProductsAPIServices.swift in Sources */,
+				768A439624A71BCF009CCCE8 /* Products.swift in Sources */,
+				768A439524A71BCF009CCCE8 /* ProductRes.swift in Sources */,
+				768A438724A71A9C009CCCE8 /* BaseAPIServices.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768A439724A71FC1009CCCE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				768A439E24A71FC1009CCCE8 /* swift_native_dependency_injectionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		768A43A124A71FC1009CCCE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 768A436724A7153B009CCCE8 /* swift-native-dependency-injection */;
+			targetProxy = 768A43A024A71FC1009CCCE8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		768A437624A7153C009CCCE8 /* LaunchScreen.storyboard */ = {
@@ -318,6 +474,44 @@
 			};
 			name = Release;
 		};
+		768A43A324A71FC1009CCCE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "swift-native-dependency-injectionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.yasuoyuhao.swift-native-dependency-injectionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-native-dependency-injection.app/swift-native-dependency-injection";
+			};
+			name = Debug;
+		};
+		768A43A424A71FC1009CCCE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "swift-native-dependency-injectionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.yasuoyuhao.swift-native-dependency-injectionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-native-dependency-injection.app/swift-native-dependency-injection";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,7 +533,74 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		768A43A224A71FC1009CCCE8 /* Build configuration list for PBXNativeTarget "swift-native-dependency-injectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				768A43A324A71FC1009CCCE8 /* Debug */,
+				768A43A424A71FC1009CCCE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		768A438A24A71AF3009CCCE8 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 4.8.0;
+			};
+		};
+		768A438D24A71B3C009CCCE8 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.13.2;
+			};
+		};
+		76C9945C24A729B7002EF4A0 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		76C9945F24A729CD002EF4A0 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 8.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		768A438B24A71AF3009CCCE8 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 768A438A24A71AF3009CCCE8 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		768A438E24A71B3C009CCCE8 /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 768A438D24A71B3C009CCCE8 /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+		76C9945D24A729B7002EF4A0 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76C9945C24A729B7002EF4A0 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		76C9946024A729CD002EF4A0 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76C9945F24A729CD002EF4A0 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 768A436024A7153B009CCCE8 /* Project object */;
 }

@@ -7,10 +7,43 @@
 //
 
 import SwiftUI
+import PromiseKit
 
 struct ContentView: View {
+    
+    @Dependencies.InjectObject() private var accountsAPIServices: AccountsAPIServices
+    
     var body: some View {
-        Text("Hello, World!")
+        Button(action: {
+            // self.fetchBySingleton()
+            _ = self.fetchByDI()
+        }) {
+            Text("login")
+        }
+    }
+    
+    func fetchBySingleton() -> Promise<Void> {
+        return Promise<Void>.init { (resolver) in
+            _ = AccountsAPIServices.shared.login(email: "yasuoyuhao@gmail.com", password: "14581234").done({ token in
+                print("----- success login -----")
+                resolver.fulfill(())
+            }).catch({ error in
+                print("----- \(error) -----")
+                resolver.reject(error)
+            })
+        }
+    }
+    
+    func fetchByDI() -> Promise<Void> {
+        return Promise<Void>.init { (resolver) in
+            _ = accountsAPIServices.login(email: "yasuoyuhao@gmail.com", password: "14581234").done({ token in
+                print("----- success login -----")
+                resolver.fulfill(())
+            }).catch({ error in
+                print("----- \(error) -----")
+                resolver.reject(error)
+            })
+        }
     }
 }
 

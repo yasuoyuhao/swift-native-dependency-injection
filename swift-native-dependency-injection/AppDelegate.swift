@@ -15,6 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Set up DI
+        if (NSClassFromString("XCTest") == nil) {
+            Dependencies.Container.default.register(AccountsAPIServices())
+        }
         return true
     }
 
